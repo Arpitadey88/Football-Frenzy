@@ -1,19 +1,21 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/*==============================================
-    Common Style
-===============================================*/
 body{
     font-family: 'Poppins', sans-serif;
-    /* margin: 0 auto; */
+    margin: 0 auto;
+    width: 100%;
 }
 /*==============================================
-    Header Area
+    Navigation Area
 ===============================================*/
-.top-header, .banner-area{
+.main-header-area{
     background-color: #2d25a0;
-    padding: 40px 110px;
+    padding: 40px;
+}
+.top-header{
+    border: 1px solid;
+    margin-bottom: 40px;
 }
 .nav-area{
     width: 100%;
@@ -276,24 +278,38 @@ span{
 @media screen and (max-width:688px){
 
     /* navigation area */
-    .nav-area{
+    .main-header-area{
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-direction: column;
     }
-    .nav-area ul{
-        display: flex;
-        align-items: center;
+    .top-header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
+    }
+    .menu ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        
     }
 
     /* banner-area */
-    .banner-area, .highlights-area{
+    .banner-area{
         width: 100%;
         flex-direction: column;
         display: flex;
         align-items: center;
+    }
+    .highlights-area{
+        width: 100%;
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       flex-direction: column;
     }
     .main-area{
         background-color: #dc081e;
