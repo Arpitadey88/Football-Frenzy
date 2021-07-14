@@ -6,7 +6,7 @@
 ===============================================*/
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 /*==============================================
     Header Area
@@ -88,7 +88,6 @@ h1{
     to {background-color: yellow;}
     from {left: 0px;}
     to {left: 300px;}
-    
   }
 .main-area a{
     text-decoration: none;
@@ -268,50 +267,100 @@ span{
     font-size: 12px;
     margin-top: 25px;
 }
-
-
 /*==============================================
     Media Query
 ===============================================*/
 
 /* Mobile device only */
-@media screen and (max-width:688px){
-    .top-header{
-        height: ;
-        background-color: tomato;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .menu{
-        display: flex;
-        flex-direction: column;
-    }
-    .button {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-}
 
-/* tab device only */
-@media screen and (min-width: 688px) and (max-width: 992px){
-    .top-header{
-        height: 0;
+@media screen and (max-width:688px){
+
+    /* navigation area */
+    .nav-area{
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .nav-area ul{
+        display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: indianred;
     }
-    .menu{
+
+    /* banner-area */
+    .banner-area, .highlights-area{
+        width: 100%;
+        flex-direction: column;
         display: flex;
-        justify-content: space-around;
+        align-items: center;
+    }
+    .main-area{
+        background-color: #dc081e;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        color: cornsilk;
+    }
+    .target-btn{
+        height: 35px;
+        width: 150px;
+    }
+    /* content area */
+    .content-area{
+        width: 100%;
+        padding: 30px 50px;
+        margin: 30px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+    }
+    /* hightlights area */
+    h2{
+        font-size: 30px;
+    }
+     /* special area */
+     .special{
+        background-color: greenyellow;
+        width: 100%;
+    }
+}
+/* Tablet device only */
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    /* navigation area */
+    .nav-area{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         flex-direction: row;
     }
-    .button {
-        margin-top: 25px;
+    .nav-area ul{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    /* banner-area */
+    .banner-area, .highlights-area{
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        background-color: yellow;
+    }
+    /* content area */
+    .content-area{
+        background-color: yellow;
+        padding: 60px 100px;
+        margin: 50px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
     }
 }
