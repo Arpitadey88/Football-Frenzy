@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body{
+    background-color:wheat;
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     width: 100%;
@@ -14,7 +15,6 @@ body{
     padding: 40px;
 }
 .top-header{
-    border: 1px solid;
     margin-bottom: 40px;
 }
 .nav-area{
@@ -178,14 +178,16 @@ h2{
 .country{
     display: flex;
     justify-content: center;
-    flex-direction: row;
 }
 .country img{ 
     width: 110px;
     height: 90px;
-    padding: 25px;
+    padding: 5px 35px;
+    margin-top: 10px;
 }
 .score{
+    height: 100px;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -202,9 +204,10 @@ span{
 }
 .btn-clr{
     background-color:crimson;
+    font-size: 30px;
     color: white;
-    padding: 12px;
-    border-radius: 30%;
+    padding: 15px;
+    border-radius: 50px;
 }
 
 /*==============================================
@@ -237,14 +240,15 @@ span{
    Footer Area
 ===============================================*/
 .informative-area{
-    background-color: grey;
+    height: 230px;
+    background-color:darkgrey;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .static-area{
-    width: 620px;
-    height: 200px;
     text-align: center;
+    padding: 5px 0;
 }
 .logo img{
     margin-top: 15px;
@@ -252,12 +256,12 @@ span{
     width: 350px;
 }
 .icons a{
+    padding: 0 10px;
     color: #2d25a0;
     font-size: 30px;
     font-weight: 900;
 }
 .icons a i{
-    padding-right: 10px;
     border-radius: 50%;
     transition: .7s;
 }
@@ -267,116 +271,11 @@ span{
 }
 .copyright p{
     font-size: 12px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
-/*==============================================
-    Media Query
-===============================================*/
 
-/* Mobile device only */
 
-@media screen and (max-width:688px){
+/* Media Query */
 
-    /* navigation area */
-    .main-header-area{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-    }
-    .top-header{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        flex-direction: column;
-    }
-    .menu ul{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        flex-direction: column;
-        
-    }
+/* Mobile Responsive */
 
-    /* banner-area */
-    .banner-area{
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-    }
-    .highlights-area{
-        width: 100%;
-       display: grid;
-       grid-template-columns: repeat(1, 1fr);
-       flex-direction: column;
-    }
-    .main-area{
-        background-color: #dc081e;
-    }
-    h1{
-        font-size: 40px;
-        font-weight: 700;
-        color: cornsilk;
-    }
-    .target-btn{
-        height: 35px;
-        width: 150px;
-    }
-    /* content area */
-    .content-area{
-        width: 100%;
-        padding: 30px 50px;
-        margin: 30px;
-    }
-    .players{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 10px;
-    }
-    /* hightlights area */
-    h2{
-        font-size: 30px;
-    }
-     /* special area */
-     .special{
-        background-color: greenyellow;
-        width: 100%;
-    }
-}
-/* Tablet device only */
-
-@media only screen and (min-width: 688px) and (max-width: 992px){
-    /* navigation area */
-    .nav-area{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    .nav-area ul{
-        display: flex;
-        align-items: flex-start;
-        flex-direction: row;
-    }
-
-    /* banner-area */
-    .banner-area, .highlights-area{
-        width: 100%;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        background-color: yellow;
-    }
-    /* content area */
-    .content-area{
-        background-color: yellow;
-        padding: 60px 100px;
-        margin: 50px;
-    }
-    .players{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-    }
-}
